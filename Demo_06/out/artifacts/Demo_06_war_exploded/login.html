@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function changeCode(){
+            var img = document.getElementsByTagName("img")[0];
+            img.src = "/Demo4?time="+new Date().getTime();
+        }
+    </script>
+</head>
+<body>
+<form action="login.html" method="post">
+    用户名：<input type="text" name="userName"/><br>
+    密码：<input type="text" name="pwd"/><br>
+    验证码：<input type="text" name="code"/><img src="/Demo4" onclick="javascript:changeCode()"/><a href="javascript:changeCode()">看不清楚换一张</a> <br>
+    <input type="submit" value="登陆"/><br>
+
+</form>
+
+</body>
+</html>
